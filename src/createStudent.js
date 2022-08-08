@@ -16,13 +16,14 @@
 */
 
 const createStudent = (name, feedback) => {
-  const estudante = {};
+  const estudante = {
+    name = '';
+    feedback = '';
+  };
   estudante.name = name;
   estudante.feedback = feedback;
 
   return estudante;
 };
-
-console.log(createStudent('Leandrão, o Lobo Solitário', 'Eita pessoa boa!'));
 
 module.exports = createStudent;
